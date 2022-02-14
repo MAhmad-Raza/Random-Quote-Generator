@@ -19,7 +19,6 @@ const randomQuote = () => {
 };
 
 quoteSound.addEventListener("click", () => {
-  let voices = speechSynthesis.getVoices();
   let utterance = new SpeechSynthesisUtterance(
     `${quoteText.innerText} By ${quoteAuthor.innerText}`
   );
